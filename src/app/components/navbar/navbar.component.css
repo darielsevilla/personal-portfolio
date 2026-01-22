@@ -1,0 +1,40 @@
+.mat-toolbar{
+    background-color: #1A2230 !important;
+    color: #F4F4F4 !important;
+    
+    font-size: 18px;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.menu-item{
+    text-decoration: none;   
+    color: #F4F4F4 !important;
+}
+
+.menu-item:hover{
+    color: #5FA8D3 !important;
+    cursor: pointer;
+}
+
+.items-section{
+    justify-content: right;
+    gap: 30px !important;
+    display: flex;
+}
+
+.left-section{
+    justify-content: left;
+    font-size: 50px !important;
+}
+
+.home-item{
+    text-decoration: none;   
+    color: #F4F4F4 !important;
+}
+
+.home-item:hover{
+
+    cursor: pointer;
+}

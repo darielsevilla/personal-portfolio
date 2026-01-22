@@ -1,0 +1,118 @@
+<div class="full-height bg-primary">
+    <!--- navbar -->
+    <app-navbar></app-navbar>
+
+    <!--seccion de presentación-->
+    
+    <div class="intro-container height-first-section">
+        <!--Pantalla grande-->
+        <mat-grid-list [cols]="lgScreen ? 2 : 1" rowHeight="500px" rowWidth="500px" class="white-txt bg-primary padding-fullscreen" [style.display]="lgScreen ? 'grid' : 'none'">
+            <mat-grid-tile>
+            <div class="grid-align-left">
+                <h2>Hola! Yo soy...</h2>
+                <p class="name-font margin-top-name"><b>Dariel Emilio Sevilla Bueso</b></p>
+                <h1 class="highlight-txt">Ingeniero en Sistemas Computacionales, Desarrollador de aplicaciones full stack</h1>
+               
+                 <button mat-button class="btn-outline  top-margin">Descargar CV</button>
+            </div>
+            </mat-grid-tile>
+
+            <mat-grid-tile><img src = "images/darielsevilla.jpeg" height="100%" width="450px" class="portrait-img"></mat-grid-tile>
+            
+        </mat-grid-list>
+
+        <!--Pantalla pequeña-->
+        <mat-grid-list cols="1" rowHeight="500px" rowWidth="500px" class="white-txt bg-primary padding-responsive" [style.display]="!lgScreen ? 'grid' : 'none'">
+            <mat-grid-tile><img src = "images/darielsevilla.jpeg" height="100%" width="450px" class="portrait-img"></mat-grid-tile>
+            <mat-grid-tile>
+            <div class="grid-align-left-mobile">
+                <h2>Hola! Yo soy...</h2>
+                <p class="name-font margin-top-name"><b>Dariel Emilio Sevilla Bueso</b></p>
+                <h1 class="highlight-txt">Ingeniero en Sistemas Computacionales, Desarrollador de aplicaciones full stack</h1>
+               
+                 <button mat-button class="btn-outline  top-margin btn-width-responsive">Descargar CV</button>
+            </div>
+            </mat-grid-tile>
+
+            
+            
+        </mat-grid-list>
+    </div>
+
+    <!--Servicios-->
+    <!--<div class="bg-secondary-dark services-section section-row">
+        <mat-grid-list  [cols]="lgScreen ? 3 : 1" rowHeight="2:1" gutterSize="0px">
+            <mat-grid-tile class="test-box section-column"><app-service-card></app-service-card></mat-grid-tile>
+            <mat-grid-tile class="test-box section-column"><app-service-card></app-service-card></mat-grid-tile>
+            <mat-grid-tile class="test-box section-column"><app-service-card></app-service-card></mat-grid-tile>
+        </mat-grid-list>
+        
+    </div>-->
+
+
+    <div class="services-group" [style.display]="lgScreen ? 'flex' : 'none'">
+        <app-service-card></app-service-card>
+        <app-service-card></app-service-card>
+        <app-service-card></app-service-card>
+    </div>
+    <div class="bg-secondary-dark pos-relative" [style.display]="!lgScreen ? 'block' : 'none'">
+        <swiper-container navigation pagination class="services-responsive">
+            <swiper-slide class = "responsive-slide"><div class="responsive-card"><app-service-card></app-service-card></div></swiper-slide>
+            <swiper-slide class = "responsive-slide"><div class="responsive-card"><app-service-card></app-service-card></div></swiper-slide>
+            <swiper-slide class = "responsive-slide"><div class="responsive-card"><app-service-card></app-service-card></div></swiper-slide>
+        </swiper-container>
+    </div>
+    <!--Proyectos-->
+    <div class="height-100vh bg-secondary-dark pos-relative">
+        <h1 class="title-section-secondary">Proyectos Destacados</h1>
+         <mat-grid-list  [cols]="lgScreen ? 3 : 1" rowHeight="3:2" class="">
+            <mat-grid-tile><app-project-card></app-project-card></mat-grid-tile>
+            <mat-grid-tile><app-project-card title=""></app-project-card></mat-grid-tile>
+            <mat-grid-tile><app-project-card></app-project-card></mat-grid-tile>
+            <mat-grid-tile><app-project-card></app-project-card></mat-grid-tile>
+        </mat-grid-list>
+        <!--Título-->
+        
+        
+
+    </div>
+    <!--Contacto-->
+    <div class="contact-section bg-primary pos-relative">
+        <mat-grid-list [cols]="lgScreen ? 2 : 1" rowHeight="2:1">
+            <mat-grid-tile>
+                <div class="social-media-div">
+                    <h1 class="title-section-footer">Contáctame</h1>
+                    <h2 class="white-txt">Dariel Sevilla</h2>
+                    <p class="white-txt">Desarrollador Web • Software • UI</p>
+                    <p class="white-txt">React • Angular • Python • Typescript • Javascript • Java • C++ • C</p>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div [class]="lgScreen ? 'white-txt ' : 'white-txt social-media-div'">
+                    <p>Tegucigalpa, Honduras</p>
+                    <p>+504 9446-3694</p>
+                    <p>darielsevilla&#64;gmail.com</p>
+
+                    <!--redes sociales-->
+                    <a href="#" class="flex social-media-container">
+                        <img src="images/whatsapp-logo.png" alt="Whatsapp" height="20px" width="20px" class="icon-margin social-media-img"/>
+                        <p class="social-media-txt"><u>Whatsapp</u></p>
+                    </a>
+                    <a href="#" class="flex social-media-container">
+                        <img src="images/instagram-logo.webp" alt="Whatsapp" height="20px" width="20px" class="icon-margin social-media-img"/>
+                        <p class="social-media-txt"><u>Instagram</u></p>
+                    </a>
+                    <a href="#" class="flex social-media-container">
+                        <img src="images/github-logo.webp" alt="Whatsapp" height="20px" width="20px" class="icon-margin social-media-img"/>
+                        <p class="social-media-txt"><u>Github</u></p>
+                    </a>
+                    <p>Instagram</p>
+                    
+                    
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+        
+
+    </div>
+</div>

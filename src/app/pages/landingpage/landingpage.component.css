@@ -1,0 +1,165 @@
+/*sección de introducción*/
+.name-font{
+    font-size: 60px;
+}
+
+.grid-align-left{
+    align-self: right !important;
+    width: 100%;
+    padding-left: 25%;
+}
+
+
+.grid-align-left-mobile{
+    align-self: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 80%;
+
+}
+
+.margin-top-name{
+    margin-top: -10px !important;
+}
+.intro-container{
+    margin-top: 60px;
+    position: relative;
+}
+
+.highlight-txt{
+    color: #00C8E0;
+}
+
+/* portrait image */
+.portrait-img{
+    border-radius: 500%;
+
+}
+
+/* botones */
+.btn-outline{
+    border: 2px solid #00C8E0;
+    color: #00C8E0 !important;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 450px;
+}
+
+.btn-width-responsive{
+    width: 100% !important;
+}
+.btn-outline:hover{
+    background-color: #00C8E0;
+    color: #0D1117 !important;
+}
+.top-margin{
+    margin-top: 50px;
+}
+
+.grid-container{
+   align-items: center;
+}
+
+.reset-margin{
+    margin: 0 !important;
+}
+
+.height-first-section{
+    height: auto;
+
+    max-height: auto;
+}
+
+
+.services-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+
+.padding-responsive{
+    padding-bottom: 20px !important;
+}
+
+.padding-fullscreen{
+    padding-bottom: 35px !important;
+}
+
+.section-column{
+    width: 400px !important;
+    align-items: center !important;
+    margin: 0px !important;
+    justify-self: center !important;
+}   
+
+.section-row{
+    
+}
+
+.services-group{
+    width: 100% !important;
+    gap: 30px;
+    justify-content: center !important;
+    background-color: #1A2230;
+    padding-top: 100px;
+    padding-bottom: 100px;   
+}
+
+.services-responsive{
+    --swiper-theme-color: #00C8E0;   
+  --swiper-navigation-color: #00C8E0;
+  --swiper-pagination-color: #00C8E0;
+    padding-top: 50px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+}
+
+.responsive-card{
+    padding-bottom: 50px;
+}
+
+.responsive-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sección de contacto */
+.contact-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.social-media-container{
+    align-content: center;
+    height: auto;
+    gap: 15px;
+    
+    text-decoration: none;
+    
+     color: inherit; 
+
+
+}
+
+.social-media-txt{
+    height: 100% !important;
+    min-height: 100% !important;
+    align-self: center;
+}
+
+.social-media-img{
+    align-self: center;
+}
+
+.social-media-div{
+    width: 68% !important;
+}

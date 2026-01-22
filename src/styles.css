@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Custom Background Colors */
+.bg-primary{
+    background-color: #0D1117 !important;
+}
+
+.bg-secondary-dark{
+    background-color: #1A2230 !important;
+}
+.bg-secondary{
+    background-color: #00E5FF;
+}
+
+.accent-txt {
+    background-color: #00D0FF;
+}
+
+.white-txt {
+    color: #F4F4F4 !important;
+}
+
+.full-height {
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.reset-display{
+    display: inline !important;
+}
+
+.height-100vh {
+  min-height: 100vh;
+  height: auto;
+}
+.title-section-secondary{
+    color: #f1f1f1;
+    background-color: #1A2230;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+.title-section-primary{
+    color: #f1f1f1;
+    background-color: #0D1117;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+.title-section-footer{
+    color: #f1f1f1;
+    background-color: #0D1117;
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+}
+.pos-relative{
+    position: relative;
+}
+
+.test-box{
+    border: 2px solid red;
+}
+

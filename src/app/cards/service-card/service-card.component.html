@@ -1,0 +1,9 @@
+<mat-card class="example-card cardShape" [style.shadow]="shadow" [style.transform] = "transform" [style.background-color]="bgcolor" [style.color]="color" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+  <mat-card-header>
+    <mat-card-title-group>
+      <img mat-card-sm-image class="image-spacing" src="{{iconSrc}}"  >
+      <mat-card-title [style.color]="color">{{title}}</mat-card-title>
+      <mat-card-subtitle [style.color]="color">{{subtitle}}</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+</mat-card>
