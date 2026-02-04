@@ -163,3 +163,12 @@
 .social-media-div{
     width: 68% !important;
 }
+
+.background-half{
+     background: linear-gradient(to bottom, 
+    #0D1117 0%,    /* Top color (Red) starts at 0% */
+    #0D1117 50%,   /* Top color ends at 50% */
+    #1A2230  50%,   /* Bottom color (Blue) starts at 50% */
+    #1A2230  100%   /* Bottom color ends at 100% */
+  );
+}

@@ -7,5 +7,9 @@ import {MatToolbarModule, MatToolbar} from '@angular/material/toolbar';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  moveTo(id : string){
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: 'smooth' });
 
+  }
 }

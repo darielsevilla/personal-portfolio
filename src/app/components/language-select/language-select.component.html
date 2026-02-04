@@ -1,0 +1,5 @@
+<button matButton [matMenuTriggerFor]="menu" class="selector">{{selected}}</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="setSelected()">Español</button>
+  <button mat-menu-item (click)="setSelected()">English</button>
+</mat-menu>

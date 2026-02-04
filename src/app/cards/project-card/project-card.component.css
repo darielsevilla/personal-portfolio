@@ -2,7 +2,7 @@
     width: 400px !important;
      overflow: hidden;
     border-radius: 10px;
-    height: auto;
+    height: 100% !important;
     background-color: '#242C3A' !important;
     color: "#F4F4F4" !important;
     border: 3px solid #242C3A !important;
@@ -28,6 +28,10 @@
 
 .padding-card{
     padding-top: 5px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.padding-subsection{
     padding-left: 15px !important;
 }
 .btn-outline{

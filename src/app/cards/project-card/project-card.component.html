@@ -1,10 +1,13 @@
 <mat-card class= "main-project-card card-background">
-  <img mat-card-image class="card-background" src="images/observatorio-upnfm-imagen.png" alt="UPNFM website">
-  <div>
-  <mat-card-title class="card-background white-txt padding-card">Shiba Inu</mat-card-title>
-  <mat-card-subtitle class="card-background white-txt padding-card">Dog Breed</mat-card-subtitle>
+  <img mat-card-image class="card-background" src="{{image}}" height="200px" alt="UPNFM website">
+  <div style="padding-top: 15px;">
+  <mat-card-title class="card-background white-txt padding-card">{{title}}</mat-card-title>
+ 
+  <mat-card-subtitle class="card-background white-txt padding-subsection">{{subtitle}}</mat-card-subtitle>
+  <p class="card-background white-txt padding-card">{{description}}</p>
+ 
   <mat-card-actions class="card-background white-txt">
-    <button mat-button class="btn-outline  top-margin btn-width-responsive"><p>Ver</p>  <mat-icon class="icon-link">open_in_new</mat-icon></button>
+    <button mat-button class="btn-outline  top-margin btn-width-responsive" (click)="openUrl()"><p>Ver</p>  <mat-icon class="icon-link">open_in_new</mat-icon></button>
   </mat-card-actions>
   </div>
 </mat-card>

@@ -16,7 +16,12 @@ export class ProjectCardComponent {
 
   @Input() title: string = 'Projecto';
   @Input() subtitle: string = 'Subtitulo del projecto';
-  @Input() image: string = '#';
-  @Input() link: string = '#';
+  @Input() description: string = 'Descripción del projecto';
+  @Input() image: string = "images/placeholder-background.png";
+  @Input() url: string = '#';
+
+  openUrl() {
+    window.open(this.url, '_blank');
+  }
 
 }
