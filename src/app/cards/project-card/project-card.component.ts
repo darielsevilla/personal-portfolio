@@ -19,7 +19,7 @@ export class ProjectCardComponent {
   @Input() description: string = 'Descripción del projecto';
   @Input() image: string = "images/placeholder-background.png";
   @Input() url: string = '#';
-
+  @Input() spanish: boolean = true;
   openUrl() {
     window.open(this.url, '_blank');
   }

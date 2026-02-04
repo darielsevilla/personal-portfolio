@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {MatToolbarModule, MatToolbar} from '@angular/material/toolbar';
 @Component({
   selector: 'app-navbar',
@@ -7,6 +7,7 @@ import {MatToolbarModule, MatToolbar} from '@angular/material/toolbar';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  @Input() spanish : boolean = true;
   moveTo(id : string){
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });

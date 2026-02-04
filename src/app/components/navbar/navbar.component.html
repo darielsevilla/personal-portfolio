@@ -1,12 +1,12 @@
 <mat-toolbar class="mat-toolbar">
     <div class="left-section">
-        <h1><a class="home-item" href="#">Portafolio</a></h1>
+        <h1><a class="home-item" href="#">{{spanish ? "Portafolio" : "Portfolio"}}</a></h1>
     </div>
     <div class="items-section">
-        <span><a class="menu-item" (click)="moveTo('Inicio')">Inicio</a></span>
-         <span class="menu-item" (click)="moveTo('Servicios')">Servicios</span>
-        <span class="menu-item" (click)="moveTo('Proyectos')">Proyectos</span>
-        <span class="menu-item" (click)="moveTo('Contacto')">Información de contacto</span>
+        <span><a class="menu-item" (click)="moveTo('Inicio')">{{ spanish ? "Inicio" : "Home"}}</a></span>
+         <span class="menu-item" (click)="moveTo('Servicios')">{{ spanish ? "Servicios" : "Services"}}</span>
+        <span class="menu-item" (click)="moveTo('Proyectos')">{{ spanish ? "Proyectos" : "Projects"}}</span>
+        <span class="menu-item" (click)="moveTo('Contacto')">{{ spanish ? "Información de contacto" : "Contact Information"}}</span>
     </div>
 </mat-toolbar>
 

@@ -1,6 +1,6 @@
 <div class="full-height bg-primary">
     <!--- navbar -->
-    <app-navbar></app-navbar>
+    <app-navbar [spanish]="spanish"></app-navbar>
 
     <!--selector de idioma -->
     <app-language-select (languageChange)="changeLang($event)"></app-language-select>
@@ -109,6 +109,7 @@
             <mat-grid-list [cols]="lgScreen ? 3 : 1" rowHeight="5:4">
                 <mat-grid-tile>
                     <app-project-card 
+                    [spanish]="spanish"
                     title="{{spanish ? 'Pagina web UPNFM' : 'UPNFM Website'}}" 
                     subtitle="{{spanish ? 'Frontend, UX design' : 'Frontend, UX design'}}" 
                     description="{{spanish ? 'Recurso educativo interactivo para el observatorio OUDENI, con funciones adicionales' : 'Interactive educational resource for the OUDENI observatory, with additional functions'}}" 
@@ -119,6 +120,7 @@
 
                 <mat-grid-tile>
                     <app-project-card 
+                    [spanish]="spanish"
                     title="{{spanish ? 'Pagina web UNITHEL' : 'UNITHEL Website'}}" 
                     subtitle="{{spanish ? 'Desarrollador' : 'Developer'}}" 
                     description="{{spanish ? 'Página web de información para UNITHEL, hecha con la herramienta wix' : 'Information website for UNITHEL, built with Wix'}}" 
@@ -129,6 +131,7 @@
 
                 <mat-grid-tile>
                     <app-project-card 
+                    [spanish]="spanish"
                     title="Netflix landing page" 
                     subtitle="Frontend, UX design" 
                     description="{{spanish ? 'Replica de la landing page de netflix hecha con react y material' : 'Replica of Netflix landing page built with React and Material'}}" 
@@ -139,6 +142,7 @@
 
                 <mat-grid-tile>
                     <app-project-card 
+                    [spanish]="spanish"
                     title="{{spanish ? 'Film Catalog App' : 'Film Catalog App'}}" 
                     subtitle="{{spanish ? 'Frontend, UX design, backend' : 'Frontend, UX design, backend'}}" 
                     description="{{spanish ? 'Aplicación de catálogo de películas hecha en react native' : 'Movie catalog application built in React Native'}}" 
@@ -149,6 +153,7 @@
 
                 <mat-grid-tile>
                     <app-project-card 
+                    [spanish]="spanish"
                     title="{{spanish ? 'Standard File Manager' : 'Standard File Manager'}}" 
                     subtitle="{{spanish ? 'Diseñador, Programador' : 'Designer, Programmer'}}" 
                     description="{{spanish ? 'Manejador de archivos de registros que utilizando Arbol B' : 'File manager for records using B-Tree'}}" 
@@ -159,6 +164,7 @@
 
                 <mat-grid-tile>
                     <app-project-card 
+                    [spanish]="spanish"
                     title="{{spanish ? 'Learn Connect' : 'Learn Connect'}}" 
                     subtitle="{{spanish ? 'backend' : 'Backend'}}" 
                     description="{{spanish ? 'Aplicación de aprendizaje interactivo utilizando con recursos generados automaticamente con gemini' : 'Interactive learning application using automatically generated resources with Gemini'}}" 
