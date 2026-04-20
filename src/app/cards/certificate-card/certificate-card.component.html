@@ -1,1 +1,16 @@
-<p>certificate-card works!</p>
+<mat-card class="example-card cardOuter" [style.shadow]="shadow" [style.transform]="transform"
+    [style.background-color]="bgcolor" [style.color]="color" (mouseenter)="onHover()" (mouseleave)="onLeave()"
+    style="margin-bottom: 20px;">
+    <mat-card-header class="certificateCardInner">
+        <img mat-card-sm-image height="600px" width="600px" class="image-spacing" src="images/certificate-badge.png">
+        <div class="txtMrg">
+            <mat-card-title [style.color]="color">{{title}}</mat-card-title>
+            <mat-card-subtitle [style.color]="color">{{subtitle}}</mat-card-subtitle>
+            <mat-card-actions class="card-background white-txt">
+                <button mat-button class="btn-outline  top-margin btn-width-responsive" (click)="downloadPdf()">
+                    <p>{{spanish ? "Ver" : "View"}}</p> <mat-icon class="icon-link">open_in_new</mat-icon>
+                </button>
+            </mat-card-actions>
+        </div>
+    </mat-card-header>
+</mat-card>

@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 @Component({
   selector: 'app-language-select',
   imports: [MatMenuModule],
@@ -7,16 +7,16 @@ import {MatMenuModule} from '@angular/material/menu';
   styleUrl: './language-select.component.css'
 })
 export class LanguageSelectComponent {
-    selected : string = "Español"
-    @Input() changeBool : ()=> void = ()=>{}
-    @Output() languageChange = new EventEmitter<string>();
-    setSelected(){
-      if(this.selected =="Español"){
-        this.selected="English"
-      }else{
-        this.selected = "Español"
-      }
-      
-      this.languageChange.emit(this.selected);
+  selected: string = "Español"
+  @Input() changeBool: () => void = () => { }
+  @Output() languageChange = new EventEmitter<string>();
+  setSelected(str: string) {
+    if (this.selected == "Español" && str == "English") {
+      this.selected = "English"
+    } else if (this.selected == "English" && str == "Español") {
+      this.selected = "Español"
     }
+
+    this.languageChange.emit(this.selected);
+  }
 }

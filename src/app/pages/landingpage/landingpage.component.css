@@ -1,16 +1,16 @@
 /*sección de introducción*/
-.name-font{
+.name-font {
     font-size: 60px;
 }
 
-.grid-align-left{
+.grid-align-left {
     align-self: right !important;
     width: 100%;
     padding-left: 25%;
 }
 
 
-.grid-align-left-mobile{
+.grid-align-left-mobile {
     align-self: center !important;
     justify-content: center !important;
     align-items: center !important;
@@ -18,26 +18,27 @@
 
 }
 
-.margin-top-name{
+.margin-top-name {
     margin-top: -10px !important;
 }
-.intro-container{
+
+.intro-container {
     margin-top: 60px;
     position: relative;
 }
 
-.highlight-txt{
+.highlight-txt {
     color: #00C8E0;
 }
 
 /* portrait image */
-.portrait-img{
+.portrait-img {
     border-radius: 500%;
 
 }
 
 /* botones */
-.btn-outline{
+.btn-outline {
     border: 2px solid #00C8E0;
     color: #00C8E0 !important;
     border-radius: 25px;
@@ -50,125 +51,147 @@
     width: 450px;
 }
 
-.btn-width-responsive{
+.btn-width-responsive {
     width: 100% !important;
 }
-.btn-outline:hover{
+
+.btn-outline:hover {
     background-color: #00C8E0;
     color: #0D1117 !important;
 }
-.top-margin{
+
+.top-margin {
     margin-top: 50px;
 }
 
-.grid-container{
-   align-items: center;
+.grid-container {
+    align-items: center;
 }
 
-.reset-margin{
+.reset-margin {
     margin: 0 !important;
 }
 
-.height-first-section{
+.height-first-section {
     height: auto;
 
     max-height: auto;
 }
 
 
-.services-section{
+.services-section {
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
 }
 
 
-.padding-responsive{
+.padding-responsive {
     padding-bottom: 20px !important;
 }
 
-.padding-fullscreen{
+.padding-fullscreen {
     padding-bottom: 35px !important;
 }
 
-.section-column{
+.section-column {
     width: 400px !important;
     align-items: center !important;
     margin: 0px !important;
     justify-self: center !important;
-}   
-
-.section-row{
-    
 }
 
-.services-group{
+.certification-row {
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.services-group {
     width: 100% !important;
     gap: 30px;
     justify-content: center !important;
     background-color: #1A2230;
     padding-top: 100px;
-    padding-bottom: 100px;   
+    padding-bottom: 100px;
 }
 
-.services-responsive{
-    --swiper-theme-color: #00C8E0;   
-  --swiper-navigation-color: #00C8E0;
-  --swiper-pagination-color: #00C8E0;
+.services-responsive {
+    --swiper-theme-color: #00C8E0;
+    --swiper-navigation-color: #00C8E0;
+    --swiper-pagination-color: #00C8E0;
     padding-top: 50px !important;
     align-items: center !important;
     justify-content: center !important;
-    
+
 }
 
-.responsive-card{
+.responsive-card {
     padding-bottom: 50px;
 }
 
 .responsive-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* sección de contacto */
-.contact-section{
+.contact-section {
     padding-top: 50px;
     padding-bottom: 50px;
-    
+
 }
 
-.social-media-container{
+.social-media-container {
     align-content: center;
     height: auto;
     gap: 15px;
-    
+
     text-decoration: none;
-    
-     color: inherit; 
+
+    color: inherit;
 
 
 }
 
-.social-media-txt{
+.social-media-txt {
     height: 100% !important;
     min-height: 100% !important;
     align-self: center;
 }
 
-.social-media-img{
+.social-media-img {
     align-self: center;
 }
 
-.social-media-div{
+.social-media-div {
     width: 68% !important;
 }
 
-.background-half{
-     background: linear-gradient(to bottom, 
-    #0D1117 0%,    /* Top color (Red) starts at 0% */
-    #0D1117 50%,   /* Top color ends at 50% */
-    #1A2230  50%,   /* Bottom color (Blue) starts at 50% */
-    #1A2230  100%   /* Bottom color ends at 100% */
-  );
+.background-half {
+    background: linear-gradient(to bottom,
+            #0D1117 0%,
+            /* Top color (Red) starts at 0% */
+            #0D1117 50%,
+            /* Top color ends at 50% */
+            #1A2230 50%,
+            /* Bottom color (Blue) starts at 50% */
+            #1A2230 100%
+            /* Bottom color ends at 100% */
+        );
+}
+
+.mat-grid-tile-content {
+    display: block !important;
+    height: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.full-tile {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid red;
 }

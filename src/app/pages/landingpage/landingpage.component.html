@@ -1,65 +1,72 @@
 <div class="full-height bg-primary">
     <!--- navbar -->
-    <app-navbar [spanish]="spanish"></app-navbar>
+    <app-navbar [spanish]="spanish" [lgScreen]='lgScreen'></app-navbar>
 
     <!--selector de idioma -->
     <app-language-select (languageChange)="changeLang($event)"></app-language-select>
     <!--seccion de presentación-->
-    
+
     <div class="intro-container height-first-section" id="Inicio">
         <!--Pantalla grande-->
-        <mat-grid-list [cols]="lgScreen ? 2 : 1" rowHeight="500px" rowWidth="500px" class="white-txt bg-primary padding-fullscreen" [style.display]="lgScreen ? 'grid' : 'none'">
+        <mat-grid-list [cols]="lgScreen ? 2 : 1" rowHeight="500px" rowWidth="500px"
+            class="white-txt bg-primary padding-fullscreen" [style.display]="lgScreen ? 'grid' : 'none'">
             <mat-grid-tile>
-            <div class="grid-align-left">
-                <h2>{{spanish ? "Hola! Yo soy..." : "Hello! I am..."}}</h2>
-                <p class="name-font margin-top-name"><b>Dariel Emilio Sevilla Bueso</b></p>
-                <h1 class="highlight-txt">{{spanish ? "Ingeniero en Sistemas Computacionales, Desarrollador de aplicaciones full stack" : "Computer Systems engineer, full stack developer"}}</h1>
-               
-                 <button mat-button class="btn-outline  top-margin">{{spanish ? "Descargar CV" : "Download Curriculum"}}</button>
-            </div>
+                <div class="grid-align-left">
+                    <h2>{{spanish ? "Hola! Yo soy..." : "Hello! I am..."}}</h2>
+                    <p class="name-font margin-top-name"><b>Dariel Emilio Sevilla Bueso</b></p>
+                    <h1 class="highlight-txt">{{spanish ? "Ingeniero en Sistemas Computacionales, Desarrollador de
+                        aplicaciones full stack" : "Computer Systems engineer, full stack developer"}}</h1>
+
+                    <a mat-button download="CV_DarielSevilla.pdf" target="_blank" href="Docs/CV_DarielSevilla.pdf"
+                        class="btn-outline  top-margin">{{spanish ? "Descargar CV" : "Download
+                        Curriculum"}}</a>
+                </div>
             </mat-grid-tile>
 
-            <mat-grid-tile><img src = "images/darielsevilla.jpeg" height="100%" width="450px" class="portrait-img"></mat-grid-tile>
-            
+            <mat-grid-tile><img src="images/darielsevilla.jpeg" height="100%" width="450px"
+                    class="portrait-img"></mat-grid-tile>
+
         </mat-grid-list>
 
         <!--Pantalla pequeña-->
-        <mat-grid-list cols="1" rowHeight="500px" rowWidth="500px" class="white-txt bg-primary padding-responsive" [style.display]="!lgScreen ? 'grid' : 'none'">
-            <mat-grid-tile><img src = "images/darielsevilla.jpeg" height="100%" width="450px" class="portrait-img"></mat-grid-tile>
+        <mat-grid-list cols="1" rowHeight="500px" rowWidth="500px" class="white-txt bg-primary padding-responsive"
+            [style.display]="!lgScreen ? 'grid' : 'none'">
+            <mat-grid-tile><img src="images/darielsevilla.jpeg" height="100%" width="450px"
+                    class="portrait-img"></mat-grid-tile>
             <mat-grid-tile>
-            <div class="grid-align-left-mobile">
-                <h2>Hola! Yo soy...</h2>
-                <p class="name-font margin-top-name"><b>Dariel Emilio Sevilla Bueso</b></p>
-                <h1 class="highlight-txt">{{spanish ? "Ingeniero en Sistemas Computacionales, Desarrollador de aplicaciones full stack" : "Computer Systems engineer, full stack developer"}}</h1>
-               
-                 <button mat-button class="btn-outline  top-margin btn-width-responsive">{{spanish ? "Descargar CV" : "Download Curriculum"}}</button>
-            </div>
+                <div class="grid-align-left-mobile">
+                    <h2>Hola! Yo soy...</h2>
+                    <p class="name-font margin-top-name"><b>Dariel Emilio Sevilla Bueso</b></p>
+                    <h1 class="highlight-txt">{{spanish ? "Ingeniero en Sistemas Computacionales, Desarrollador de
+                        aplicaciones full stack" : "Computer Systems engineer, full stack developer"}}</h1>
+
+                    <a mat-button download="CV_DarielSevilla.pdf" target="_blank" href="Docs/CV_DarielSevilla.pdf"
+                        class="btn-outline top-margin btn-width-responsive">{{spanish ? "Descargar CV" : "Download
+                        Curriculum"}}</a>
+                </div>
             </mat-grid-tile>
 
-            
-            
+
+
         </mat-grid-list>
     </div>
 
     <div id="Servicios">
         <div class="services-group background-half" [style.display]="lgScreen ? 'flex' : 'none'">
 
-            <app-service-card 
-            title="{{spanish ? 'Ingeniería en sistemas' : 'Systems Engineering'}}" 
-            subtitle="{{spanish ? 'Base de datos, Arquitectura de Software y adaptabilidad de entorno' : 'Databases, Software Architecture, and Environment Adaptability'}}" 
-            iconSrc="images/terminal-icon.png">
+            <app-service-card title="{{spanish ? 'Ingeniería en sistemas' : 'Systems Engineering'}}"
+                subtitle="{{spanish ? 'Base de datos, Arquitectura de Software y adaptabilidad de entorno' : 'Databases, Software Architecture, and Environment Adaptability'}}"
+                iconSrc="images/terminal-icon.png">
             </app-service-card>
 
-            <app-service-card 
-            title="{{spanish ? 'Desarrollo Fullstack' : 'Fullstack Development'}}" 
-            subtitle="{{spanish ? 'Desarrollo de aplicaciones web y mobiles, en front y backend' : 'Development of web and mobile applications, both frontend and backend'}}" 
-            iconSrc="images/devices-icon.png">
+            <app-service-card title="{{spanish ? 'Desarrollo Fullstack' : 'Fullstack Development'}}"
+                subtitle="{{spanish ? 'Desarrollo de aplicaciones web y mobiles, en front y backend' : 'Development of web and mobile applications, both frontend and backend'}}"
+                iconSrc="images/devices-icon.png">
             </app-service-card>
 
-            <app-service-card 
-            title="{{spanish ? 'Instructor y Tutor' : 'Instructor and Tutor'}}" 
-            subtitle="{{spanish ? 'Instructor de lab de programación, tutor de algebra y geometría' : 'Programming lab instructor, tutor in algebra and geometry'}}" 
-            iconSrc="images/edu-icon.png">
+            <app-service-card title="{{spanish ? 'Instructor y Tutor' : 'Instructor and Tutor'}}"
+                subtitle="{{spanish ? 'Instructor de lab de programación, tutor de algebra y geometría' : 'Programming lab instructor, tutor in algebra and geometry'}}"
+                iconSrc="images/edu-icon.png">
             </app-service-card>
 
         </div>
@@ -68,118 +75,111 @@
             <div class="background-segmented"></div>
             <swiper-container navigation pagination class="services-responsive">
 
-            <swiper-slide class="responsive-slide">
-                <div class="responsive-card">
-                <app-service-card 
-                    title="{{spanish ? 'Ingeniería en sistemas' : 'Systems Engineering'}}" 
-                    subtitle="{{spanish ? 'Base de datos, Arquitectura de Software y adaptabilidad de entorno' : 'Databases, Software Architecture, and Environment Adaptability'}}" 
-                    iconSrc="images/terminal-icon.png">
-                </app-service-card>
-                </div>
-            </swiper-slide>
+                <swiper-slide class="responsive-slide">
+                    <div class="responsive-card">
+                        <app-service-card title="{{spanish ? 'Ingeniería en sistemas' : 'Systems Engineering'}}"
+                            subtitle="{{spanish ? 'Base de datos, Arquitectura de Software y adaptabilidad de entorno' : 'Databases, Software Architecture, and Environment Adaptability'}}"
+                            iconSrc="images/terminal-icon.png">
+                        </app-service-card>
+                    </div>
+                </swiper-slide>
 
-            <swiper-slide class="responsive-slide">
-                <div class="responsive-card">
-                <app-service-card 
-                    title="{{spanish ? 'Desarrollo Fullstack' : 'Fullstack Development'}}" 
-                    subtitle="{{spanish ? 'Desarrollo de aplicaciones web y mobiles, en front y backend' : 'Development of web and mobile applications, both frontend and backend'}}" 
-                    iconSrc="images/devices-icon.png">
-                </app-service-card>
-                </div>
-            </swiper-slide>
+                <swiper-slide class="responsive-slide">
+                    <div class="responsive-card">
+                        <app-service-card title="{{spanish ? 'Desarrollo Fullstack' : 'Fullstack Development'}}"
+                            subtitle="{{spanish ? 'Desarrollo de aplicaciones web y mobiles, en front y backend' : 'Development of web and mobile applications, both frontend and backend'}}"
+                            iconSrc="images/devices-icon.png">
+                        </app-service-card>
+                    </div>
+                </swiper-slide>
 
-            <swiper-slide class="responsive-slide">
-                <div class="responsive-card">
-                <app-service-card 
-                    title="{{spanish ? 'Instructor y Tutor' : 'Instructor and Tutor'}}" 
-                    subtitle="{{spanish ? 'Instructor de lab de programación, tutor de algebra y geometría' : 'Programming lab instructor, tutor in algebra and geometry'}}" 
-                    iconSrc="images/edu-icon.png">
-                </app-service-card>
-                </div>
-            </swiper-slide>
+                <swiper-slide class="responsive-slide">
+                    <div class="responsive-card">
+                        <app-service-card title="{{spanish ? 'Instructor y Tutor' : 'Instructor and Tutor'}}"
+                            subtitle="{{spanish ? 'Instructor de lab de programación, tutor de algebra y geometría' : 'Programming lab instructor, tutor in algebra and geometry'}}"
+                            iconSrc="images/edu-icon.png">
+                        </app-service-card>
+                    </div>
+                </swiper-slide>
 
             </swiper-container>
-        </div>    
+        </div>
     </div>
 
     <!--Proyectos-->
     <div class="height-100vh bg-secondary-dark pos-relative padding-b-30px" id="Proyectos">
-        <h1 class="title-section-secondary margin-b-30px" >{{spanish ? "Proyectos Destacados" : "Notable Projects"}}</h1>
-         <mat-grid-list  [cols]="lgScreen ? 3 : 1" rowHeight="5:4">
+        <h1 class="title-section-secondary margin-b-30px">{{spanish ? "Proyectos Destacados" : "Notable Projects"}}</h1>
+        <mat-grid-list [cols]="lgScreen ? 3 : 1" rowHeight="5:4">
             <mat-grid-list [cols]="lgScreen ? 3 : 1" rowHeight="5:4">
                 <mat-grid-tile>
-                    <app-project-card 
-                    [spanish]="spanish"
-                    title="{{spanish ? 'Pagina web UPNFM' : 'UPNFM Website'}}" 
-                    subtitle="{{spanish ? 'Frontend, UX design' : 'Frontend, UX design'}}" 
-                    description="{{spanish ? 'Recurso educativo interactivo para el observatorio OUDENI, con funciones adicionales' : 'Interactive educational resource for the OUDENI observatory, with additional functions'}}" 
-                    image="images/observatorio-upnfm-imagen.png" 
-                    url="https://observatorio.upnfm.edu.hn/landingpage">
+                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UPNFM' : 'UPNFM Website'}}"
+                        subtitle="{{spanish ? 'Frontend, UX design' : 'Frontend, UX design'}}"
+                        description="{{spanish ? 'Recurso educativo interactivo para el observatorio OUDENI, con funciones adicionales' : 'Interactive educational resource for the OUDENI observatory, with additional functions'}}"
+                        image="images/observatorio-upnfm-imagen.png"
+                        url="https://observatorio.upnfm.edu.hn/landingpage">
                     </app-project-card>
                 </mat-grid-tile>
 
                 <mat-grid-tile>
-                    <app-project-card 
-                    [spanish]="spanish"
-                    title="{{spanish ? 'Pagina web UNITHEL' : 'UNITHEL Website'}}" 
-                    subtitle="{{spanish ? 'Desarrollador' : 'Developer'}}" 
-                    description="{{spanish ? 'Página web de información para UNITHEL, hecha con la herramienta wix' : 'Information website for UNITHEL, built with Wix'}}" 
-                    image="images/unithel-imagen.png" 
-                    url="https://www.unithel.net">
+                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UNITHEL' : 'UNITHEL Website'}}"
+                        subtitle="{{spanish ? 'Desarrollador' : 'Developer'}}"
+                        description="{{spanish ? 'Página web de información para UNITHEL, hecha con la herramienta wix' : 'Information website for UNITHEL, built with Wix'}}"
+                        image="images/unithel-imagen.png" url="https://www.unithel.net">
                     </app-project-card>
                 </mat-grid-tile>
 
                 <mat-grid-tile>
-                    <app-project-card 
-                    [spanish]="spanish"
-                    title="Netflix landing page" 
-                    subtitle="Frontend, UX design" 
-                    description="{{spanish ? 'Replica de la landing page de netflix hecha con react y material' : 'Replica of Netflix landing page built with React and Material'}}" 
-                    url="https://github.com/darielsevilla/examen1-darielsevilla-hectorsabillon" 
-                    image="images/netflix-imagen.png">
+                    <app-project-card [spanish]="spanish" title="Netflix landing page" subtitle="Frontend, UX design"
+                        description="{{spanish ? 'Replica de la landing page de netflix hecha con react y material' : 'Replica of Netflix landing page built with React and Material'}}"
+                        url="https://github.com/darielsevilla/examen1-darielsevilla-hectorsabillon"
+                        image="images/netflix-imagen.png">
                     </app-project-card>
                 </mat-grid-tile>
 
                 <mat-grid-tile>
-                    <app-project-card 
-                    [spanish]="spanish"
-                    title="{{spanish ? 'Film Catalog App' : 'Film Catalog App'}}" 
-                    subtitle="{{spanish ? 'Frontend, UX design, backend' : 'Frontend, UX design, backend'}}" 
-                    description="{{spanish ? 'Aplicación de catálogo de películas hecha en react native' : 'Movie catalog application built in React Native'}}" 
-                    url="https://github.com/darielsevilla/Film_Catalog" 
-                    image="images/filmcatalog-imagen.png">
+                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Film Catalog App' : 'Film Catalog App'}}"
+                        subtitle="{{spanish ? 'Frontend, UX design, backend' : 'Frontend, UX design, backend'}}"
+                        description="{{spanish ? 'Aplicación de catálogo de películas hecha en react native' : 'Movie catalog application built in React Native'}}"
+                        url="https://github.com/darielsevilla/Film_Catalog" image="images/filmcatalog-imagen.png">
                     </app-project-card>
                 </mat-grid-tile>
 
                 <mat-grid-tile>
-                    <app-project-card 
-                    [spanish]="spanish"
-                    title="{{spanish ? 'Standard File Manager' : 'Standard File Manager'}}" 
-                    subtitle="{{spanish ? 'Diseñador, Programador' : 'Designer, Programmer'}}" 
-                    description="{{spanish ? 'Manejador de archivos de registros que utilizando Arbol B' : 'File manager for records using B-Tree'}}" 
-                    url="https://github.com/darielsevilla/StandardFileManager" 
-                    image="images/sfm-imagen.png">
+                    <app-project-card [spanish]="spanish"
+                        title="{{spanish ? 'Standard File Manager' : 'Standard File Manager'}}"
+                        subtitle="{{spanish ? 'Diseñador, Programador' : 'Designer, Programmer'}}"
+                        description="{{spanish ? 'Manejador de archivos de registros que utilizando Arbol B' : 'File manager for records using B-Tree'}}"
+                        url="https://github.com/darielsevilla/StandardFileManager" image="images/sfm-imagen.png">
                     </app-project-card>
                 </mat-grid-tile>
 
                 <mat-grid-tile>
-                    <app-project-card 
-                    [spanish]="spanish"
-                    title="{{spanish ? 'Learn Connect' : 'Learn Connect'}}" 
-                    subtitle="{{spanish ? 'backend' : 'Backend'}}" 
-                    description="{{spanish ? 'Aplicación de aprendizaje interactivo utilizando con recursos generados automaticamente con gemini' : 'Interactive learning application using automatically generated resources with Gemini'}}" 
-                    url="https://github.com/Tatiana-Garcia/LearnConnect_Backend" 
-                    image="images/learnconnect-imagen.png">
+                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Learn Connect' : 'Learn Connect'}}"
+                        subtitle="{{spanish ? 'backend' : 'Backend'}}"
+                        description="{{spanish ? 'Aplicación de aprendizaje interactivo utilizando con recursos generados automaticamente con gemini' : 'Interactive learning application using automatically generated resources with Gemini'}}"
+                        url="https://github.com/Tatiana-Garcia/LearnConnect_Backend"
+                        image="images/learnconnect-imagen.png">
                     </app-project-card>
                 </mat-grid-tile>
             </mat-grid-list>
         </mat-grid-list>
-        <!--Título-->
-        
-        
+
 
     </div>
-    
+    <!--Certificados-->
+    <div class="bg-secondary-dark pos-relative padding-b-30px" id="Certificados" style="width: 100%;">
+        <h1 class="title-section-secondary margin-b-30px">{{spanish ? "Documentos y Certificados" : "Documents and
+            Certifications"}}
+        </h1>
+        <div [style.display]="lgScreen ? 'flex' : 'block'" class="certification-row">
+            <app-certificate-card title="Linux Unhatched"
+                subtitle="{{spanish ? 'Curso de linux básico' : 'Basic Linux Course'}}"
+                certificate="Docs/Linux_Unhatched_certificate_darielsevilla-unitec-edu_4419c005-8280-4c49-9109-6535f863df71 (2).pdf"
+                [widthPar]="lgScreen ? '50' : '100'"></app-certificate-card>
+
+        </div>
+
+    </div>
     <!--Contacto-->
     <div class="contact-section bg-primary pos-relative" id="Contacto">
         <mat-grid-list [cols]="lgScreen ? 2 : 1" rowHeight="2:1">
@@ -187,7 +187,8 @@
                 <div class="social-media-div">
                     <h1 class="title-section-footer">{{ spanish ? "Contáctame" : "Contact Me"}}</h1>
                     <h2 class="white-txt">Dariel Sevilla</h2>
-                    <p class="white-txt">{{spanish ? "Desarrollador Web • Software • UI" : "Web Developer • Software • UI"}}</p>
+                    <p class="white-txt">{{spanish ? "Desarrollador Web • Software • UI" : "Web Developer • Software •
+                        UI"}}</p>
                     <p class="white-txt">React • Angular • Python • Typescript • Javascript • Java • C++ • C</p>
                 </div>
             </mat-grid-tile>
@@ -199,24 +200,27 @@
 
                     <!--redes sociales-->
                     <a href="https://wa.me/50494463694" class="flex social-media-container">
-                        <img src="images/whatsapp-logo.png" alt="Whatsapp" height="20px" width="20px" class="icon-margin social-media-img"/>
+                        <img src="images/whatsapp-logo.png" alt="Whatsapp" height="20px" width="20px"
+                            class="icon-margin social-media-img" />
                         <p class="social-media-txt"><u>Whatsapp</u></p>
                     </a>
                     <a href="https://www.instagram.com/darielsevilla/" class="flex social-media-container">
-                        <img src="images/instagram-logo.webp" alt="Whatsapp" height="20px" width="20px" class="icon-margin social-media-img"/>
+                        <img src="images/instagram-logo.webp" alt="Whatsapp" height="20px" width="20px"
+                            class="icon-margin social-media-img" />
                         <p class="social-media-txt"><u>Instagram</u></p>
                     </a>
                     <a href="https://github.com/darielsevilla" class="flex social-media-container">
-                        <img src="images/github-logo.webp" alt="Whatsapp" height="20px" width="20px" class="icon-margin social-media-img"/>
+                        <img src="images/github-logo.webp" alt="Whatsapp" height="20px" width="20px"
+                            class="icon-margin social-media-img" />
                         <p class="social-media-txt"><u>Github</u></p>
                     </a>
-                    
-                    
-                    
+
+
+
                 </div>
             </mat-grid-tile>
         </mat-grid-list>
-        
+
 
     </div>
 </div>

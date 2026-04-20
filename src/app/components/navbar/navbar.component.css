@@ -1,40 +1,68 @@
-.mat-toolbar{
+.mat-toolbar {
     background-color: #1A2230 !important;
     color: #F4F4F4 !important;
-    
+
     font-size: 18px;
     justify-content: space-between;
     padding-right: 80px;
     padding-left: 80px;
 }
 
-.menu-item{
-    text-decoration: none;   
+.menu-item {
+    text-decoration: none;
     color: #F4F4F4 !important;
 }
 
-.menu-item:hover{
+.menu-item:hover {
     color: #5FA8D3 !important;
     cursor: pointer;
 }
 
-.items-section{
+.items-section {
     justify-content: right;
     gap: 30px !important;
     display: flex;
 }
 
-.left-section{
+.left-section {
     justify-content: left;
     font-size: 50px !important;
 }
 
-.home-item{
-    text-decoration: none;   
+.home-item {
+    text-decoration: none;
     color: #F4F4F4 !important;
 }
 
-.home-item:hover{
+.home-item:hover {
 
     cursor: pointer;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: #F4F4F4;
+    margin-right: -40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+
+/* Click (active) effect */
+.menu-btn:active {
+    transform: scale(0.95) rotate(10deg);
+}
+
+.menu-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Optional: rotate icon on hover */
+.menu-btn:hover .menu-icon {
+    transform: rotate(90deg);
 }

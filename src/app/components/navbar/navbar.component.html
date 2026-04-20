@@ -2,11 +2,25 @@
     <div class="left-section">
         <h1><a class="home-item" href="#">{{spanish ? "Portafolio" : "Portfolio"}}</a></h1>
     </div>
-    <div class="items-section">
-        <span><a class="menu-item" (click)="moveTo('Inicio')">{{ spanish ? "Inicio" : "Home"}}</a></span>
-         <span class="menu-item" (click)="moveTo('Servicios')">{{ spanish ? "Servicios" : "Services"}}</span>
-        <span class="menu-item" (click)="moveTo('Proyectos')">{{ spanish ? "Proyectos" : "Projects"}}</span>
-        <span class="menu-item" (click)="moveTo('Contacto')">{{ spanish ? "Información de contacto" : "Contact Information"}}</span>
+
+    <div [style]="{ display: lgScreen ? 'block' : 'none'}">
+        <div class="items-section">
+            <span *ngFor="let item of menuItems" class="menu-item" (click)="moveTo(item.es)">
+                {{spanish ? item.es : item.en }}
+            </span>
+        </div>
+    </div>
+
+    <!--Menu para pantallas pequeñas-->
+    <div [style]="{ display: lgScreen ? 'none' : 'block'}">
+        <button matIconButton [matMenuTriggerFor]="menu" class="menu-btn" aria-label="Example icon-button with a menu">
+            <mat-icon class="menu-icon">more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item *ngFor="let item of menuItems">
+                <span (click)="moveTo(item.es)"> {{spanish ? item.es : item.en }}</span>
+            </button>
+
+        </mat-menu>
     </div>
 </mat-toolbar>
-

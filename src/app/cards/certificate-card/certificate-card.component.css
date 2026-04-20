@@ -1,0 +1,42 @@
+.certificateCardInner {
+    width: auto;
+}
+
+
+.txtMrg {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.btn-outline {
+    height: 50px;
+    border: 2px solid #00C8E0;
+    color: #00C8E0 !important;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100% !important;
+
+}
+
+.cardOuter {
+    width: 700px !important;
+    max-width: 100%;
+}
+
+.btn-width-responsive {
+    width: 100% !important;
+}
+
+.btn-outline:hover {
+    background-color: #00C8E0;
+    color: #0D1117 !important;
+}
