@@ -109,60 +109,58 @@
     <!--Proyectos-->
     <div class="height-100vh bg-secondary-dark pos-relative padding-b-30px" id="Proyectos">
         <h1 class="title-section-secondary margin-b-30px">{{spanish ? "Proyectos Destacados" : "Notable Projects"}}</h1>
-        <mat-grid-list [cols]="lgScreen ? 3 : 1" rowHeight="5:4">
-            <mat-grid-list [cols]="lgScreen ? 3 : 1" rowHeight="5:4">
-                <mat-grid-tile>
-                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UPNFM' : 'UPNFM Website'}}"
-                        subtitle="{{spanish ? 'Frontend, UX design' : 'Frontend, UX design'}}"
-                        description="{{spanish ? 'Recurso educativo interactivo para el observatorio OUDENI, con funciones adicionales' : 'Interactive educational resource for the OUDENI observatory, with additional functions'}}"
-                        image="images/observatorio-upnfm-imagen.png"
-                        url="https://observatorio.upnfm.edu.hn/landingpage">
-                    </app-project-card>
-                </mat-grid-tile>
 
-                <mat-grid-tile>
-                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UNITHEL' : 'UNITHEL Website'}}"
-                        subtitle="{{spanish ? 'Desarrollador' : 'Developer'}}"
-                        description="{{spanish ? 'Página web de información para UNITHEL, hecha con la herramienta wix' : 'Information website for UNITHEL, built with Wix'}}"
-                        image="images/unithel-imagen.png" url="https://www.unithel.net">
-                    </app-project-card>
-                </mat-grid-tile>
+        <mat-grid-list [cols]="lgScreen ? 3 : 1" rowHeight="7:6">
+            <mat-grid-tile>
+                <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UPNFM' : 'UPNFM Website'}}"
+                    subtitle="{{spanish ? 'Frontend, UX design' : 'Frontend, UX design'}}"
+                    description="{{spanish ? 'Recurso educativo interactivo para el observatorio OUDENI, con funciones adicionales' : 'Interactive educational resource for the OUDENI observatory, with additional functions'}}"
+                    image="images/observatorio-upnfm-imagen.png" url="https://observatorio.upnfm.edu.hn/landingpage">
+                </app-project-card>
+            </mat-grid-tile>
 
-                <mat-grid-tile>
-                    <app-project-card [spanish]="spanish" title="Netflix landing page" subtitle="Frontend, UX design"
-                        description="{{spanish ? 'Replica de la landing page de netflix hecha con react y material' : 'Replica of Netflix landing page built with React and Material'}}"
-                        url="https://github.com/darielsevilla/examen1-darielsevilla-hectorsabillon"
-                        image="images/netflix-imagen.png">
-                    </app-project-card>
-                </mat-grid-tile>
+            <mat-grid-tile>
+                <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UNITHEL' : 'UNITHEL Website'}}"
+                    subtitle="{{spanish ? 'Desarrollador' : 'Developer'}}"
+                    description="{{spanish ? 'Página web de información para UNITHEL, hecha con la herramienta wix' : 'Information website for UNITHEL, built with Wix'}}"
+                    image="images/unithel-imagen.png" url="https://www.unithel.net">
+                </app-project-card>
+            </mat-grid-tile>
 
-                <mat-grid-tile>
-                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Film Catalog App' : 'Film Catalog App'}}"
-                        subtitle="{{spanish ? 'Frontend, UX design, backend' : 'Frontend, UX design, backend'}}"
-                        description="{{spanish ? 'Aplicación de catálogo de películas hecha en react native' : 'Movie catalog application built in React Native'}}"
-                        url="https://github.com/darielsevilla/Film_Catalog" image="images/filmcatalog-imagen.png">
-                    </app-project-card>
-                </mat-grid-tile>
+            <mat-grid-tile>
+                <app-project-card [spanish]="spanish" title="Netflix landing page" subtitle="Frontend, UX design"
+                    description="{{spanish ? 'Replica de la landing page de netflix hecha con react y material' : 'Replica of Netflix landing page built with React and Material'}}"
+                    url="https://github.com/darielsevilla/examen1-darielsevilla-hectorsabillon"
+                    image="images/netflix-imagen.png">
+                </app-project-card>
+            </mat-grid-tile>
 
-                <mat-grid-tile>
-                    <app-project-card [spanish]="spanish"
-                        title="{{spanish ? 'Standard File Manager' : 'Standard File Manager'}}"
-                        subtitle="{{spanish ? 'Diseñador, Programador' : 'Designer, Programmer'}}"
-                        description="{{spanish ? 'Manejador de archivos de registros que utilizando Arbol B' : 'File manager for records using B-Tree'}}"
-                        url="https://github.com/darielsevilla/StandardFileManager" image="images/sfm-imagen.png">
-                    </app-project-card>
-                </mat-grid-tile>
+            <mat-grid-tile>
+                <app-project-card [spanish]="spanish" title="{{spanish ? 'Film Catalog App' : 'Film Catalog App'}}"
+                    subtitle="{{spanish ? 'Frontend, UX design, backend' : 'Frontend, UX design, backend'}}"
+                    description="{{spanish ? 'Aplicación de catálogo de películas hecha en react native' : 'Movie catalog application built in React Native'}}"
+                    url="https://github.com/darielsevilla/Film_Catalog" image="images/filmcatalog-imagen.png">
+                </app-project-card>
+            </mat-grid-tile>
 
-                <mat-grid-tile>
-                    <app-project-card [spanish]="spanish" title="{{spanish ? 'Learn Connect' : 'Learn Connect'}}"
-                        subtitle="{{spanish ? 'backend' : 'Backend'}}"
-                        description="{{spanish ? 'Aplicación de aprendizaje interactivo utilizando con recursos generados automaticamente con gemini' : 'Interactive learning application using automatically generated resources with Gemini'}}"
-                        url="https://github.com/Tatiana-Garcia/LearnConnect_Backend"
-                        image="images/learnconnect-imagen.png">
-                    </app-project-card>
-                </mat-grid-tile>
-            </mat-grid-list>
+            <mat-grid-tile>
+                <app-project-card [spanish]="spanish"
+                    title="{{spanish ? 'Standard File Manager' : 'Standard File Manager'}}"
+                    subtitle="{{spanish ? 'Diseñador, Programador' : 'Designer, Programmer'}}"
+                    description="{{spanish ? 'Manejador de archivos de registros que utilizando Arbol B' : 'File manager for records using B-Tree'}}"
+                    url="https://github.com/darielsevilla/StandardFileManager" image="images/sfm-imagen.png">
+                </app-project-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <app-project-card [spanish]="spanish" title="{{spanish ? 'Learn Connect' : 'Learn Connect'}}"
+                    subtitle="{{spanish ? 'backend' : 'Backend'}}"
+                    description="{{spanish ? 'Aplicación de aprendizaje interactivo utilizando con recursos generados automaticamente con gemini' : 'Interactive learning application using automatically generated resources with Gemini'}}"
+                    url="https://github.com/Tatiana-Garcia/LearnConnect_Backend" image="images/learnconnect-imagen.png">
+                </app-project-card>
+            </mat-grid-tile>
         </mat-grid-list>
+
 
 
     </div>
