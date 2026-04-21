@@ -110,7 +110,7 @@
     <div class="height-100vh bg-secondary-dark pos-relative padding-b-30px" id="Proyectos">
         <h1 class="title-section-secondary margin-b-30px">{{spanish ? "Proyectos Destacados" : "Notable Projects"}}</h1>
 
-        <mat-grid-list [cols]="lgScreen ? 3 : 1" rowHeight="7:6">
+        <mat-grid-list [cols]="lgScreen ? 3 : 1" [rowHeight]="lgScreen ? '8:7' : '5:4'">
             <mat-grid-tile>
                 <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UPNFM' : 'UPNFM Website'}}"
                     subtitle="{{spanish ? 'Frontend, UX design' : 'Frontend, UX design'}}"
