@@ -1,40 +1,45 @@
 .main-project-card {
     width: 400px !important;
-     overflow: hidden;
+    overflow: hidden;
     border-radius: 10px;
     height: 100% !important;
+    max-height: 500px;
     background-color: '#242C3A' !important;
     color: "#F4F4F4" !important;
     border: 3px solid #242C3A !important;
 }
 
 .main-project-card {
-  transition:
-    background-color 250ms ease,
-    color 250ms ease,
-    transform 200ms ease,
-    box-shadow 200ms ease;
+    transition:
+        background-color 250ms ease,
+        color 250ms ease,
+        transform 200ms ease,
+        box-shadow 200ms ease;
 }
 
 
 .main-project-card:hover {
-  transform: translateY(-6px); /* levanta la card */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  
+    transform: translateY(-6px);
+    /* levanta la card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
 }
+
 .card-background {
     background-color: #242C3A !important;
 }
 
-.padding-card{
+.padding-card {
     padding-top: 5px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
-.padding-subsection{
+
+.padding-subsection {
     padding-left: 15px !important;
 }
-.btn-outline{
+
+.btn-outline {
     height: 50px;
     border: 2px solid #00C8E0;
     color: #00C8E0 !important;
@@ -52,10 +57,11 @@
     gap: 5px;
 }
 
-.btn-width-responsive{
+.btn-width-responsive {
     width: 100% !important;
 }
-.btn-outline:hover{
+
+.btn-outline:hover {
     background-color: #00C8E0;
     color: #0D1117 !important;
 }
