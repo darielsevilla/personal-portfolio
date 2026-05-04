@@ -16,10 +16,16 @@
                     <p class="name-font margin-top-name"><b>Dariel Emilio Sevilla Bueso</b></p>
                     <h1 class="highlight-txt">{{spanish ? "Ingeniero en Sistemas Computacionales, Desarrollador de
                         aplicaciones full stack" : "Computer Systems engineer, full stack developer"}}</h1>
+                    <div>
+                        <a mat-button download="CV_DarielSevilla.pdf" target="_blank" href="Docs/CV_DarielSevilla.pdf"
+                            class="btn-outline  top-margin">{{spanish ? "Descargar CV (Español)" : "Download
+                            Curriculum (Spanish)"}}</a>
+                        <a mat-button download="DarielSevilla_Resume.pdf" target="_blank"
+                            href="Docs/DarielSevilla_Resume.pdf" class="btn-outline top-margin-20">{{spanish ?
+                            "Descargar CV (Ingles)" : "Download
+                            resume (English)"}}</a>
+                    </div>
 
-                    <a mat-button download="CV_DarielSevilla.pdf" target="_blank" href="Docs/CV_DarielSevilla.pdf"
-                        class="btn-outline  top-margin">{{spanish ? "Descargar CV" : "Download
-                        Curriculum"}}</a>
                 </div>
             </mat-grid-tile>
 
@@ -110,7 +116,7 @@
     <div class="height-100vh bg-secondary-dark pos-relative padding-b-30px" id="Proyectos">
         <h1 class="title-section-secondary margin-b-30px">{{spanish ? "Proyectos Destacados" : "Notable Projects"}}</h1>
 
-        <mat-grid-list [cols]="lgScreen ? 3 : 1" [rowHeight]="lgScreen ? '8:7' : '5:4'">
+        <mat-grid-list [cols]="lgScreen ? 3 : 1" [rowHeight]="lgScreen ? '12:11' : '5:4'">
             <mat-grid-tile>
                 <app-project-card [spanish]="spanish" title="{{spanish ? 'Pagina web UPNFM' : 'UPNFM Website'}}"
                     subtitle="{{spanish ? 'Frontend, UX design' : 'Frontend, UX design'}}"

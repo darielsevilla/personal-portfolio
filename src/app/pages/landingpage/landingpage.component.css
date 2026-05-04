@@ -61,8 +61,13 @@
 }
 
 .top-margin {
-    margin-top: 50px;
+    margin-top: 40px;
 }
+
+.top-margin-20 {
+    margin-top: 20px;
+}
+
 
 .grid-container {
     align-items: center;
