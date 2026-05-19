@@ -183,6 +183,14 @@
 
         </div>
 
+        <div [style.display]="lgScreen ? 'flex' : 'block'" class="certification-row">
+            <app-certificate-card title="{{spanish? 'Introducción a Redes' : 'Networks introduction'}}"
+                subtitle="{{spanish ? 'Curso de redes básico con packet tracer' : 'Basic Networks introduction course with packet tracer'}}"
+                certificate="Docs/CCNA-_Introduction_to_Networks_certificate_darielsevilla-unitec-edu_f14665b5-f976-4ae3-9f59-81044d3fa6d1.pdf"
+                [widthPar]="lgScreen ? '50' : '100'"></app-certificate-card>
+
+        </div>
+
     </div>
     <!--Contacto-->
     <div class="contact-section bg-primary pos-relative" id="Contacto">
